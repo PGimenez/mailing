@@ -1,6 +1,6 @@
 # Use a small, Alpine-based image as the runtime base
 # You might need to match the version with your build environment or use a slim version of the same base image
-FROM debian:buster-slim as runtime
+FROM rust:1.49
 
 # Create an app directory to hold the application
 WORKDIR /app
