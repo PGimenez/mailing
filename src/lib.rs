@@ -27,7 +27,7 @@ async fn health_check() -> impl Responder {
 }
 
 pub fn run(listener: TcpListener) -> Result<Server, std::io::Error> {
-    env_logger::init_from_env(env_logger::Env::default().default_filter_or("info")); // Initialize the logger
+    let _ = env_logger::try_init_from_env(env_logger::Env::default().default_filter_or("info")); // Initialize the logger
 
     let server = HttpServer::new(|| {
         App::new()
