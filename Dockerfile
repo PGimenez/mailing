@@ -8,7 +8,7 @@ WORKDIR /app
 # Copy the build executable from the local build directory into the image
 # Adjust the source path to match where the built binary is located relative to the Dockerfile
 # This assumes that the binary is named 'mailing' and is located in the 'target/release/' directory
-COPY target/release/mailing /app/
+COPY mailing/target/release/mailing /app/
 
 # If your application requires additional resources, configurations, or libraries, copy them here
 # COPY other resources as needed
