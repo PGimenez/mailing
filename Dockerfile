@@ -1,6 +1,6 @@
 # Use a small, Alpine-based image as the runtime base
 # You might need to match the version with your build environment or use a slim version of the same base image
-FROM rust:1.49
+FROM rust:latest
 
 # Create an app directory to hold the application
 WORKDIR /app
