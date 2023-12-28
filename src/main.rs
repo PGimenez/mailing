@@ -1,4 +1,4 @@
-use mailing::run;
+use mailing::startup::run;
 use std::net::TcpListener;
 
 #[tokio::main]
